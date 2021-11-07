@@ -1,0 +1,126 @@
+html,
+body {
+  background-color: #99ccff;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  min-width: 320px;
+}
+
+.form {
+  width: 65%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 10px;
+  padding-top: 20px;
+  background-color: #77aadd;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.row {
+  width: 100%;
+  
+}
+
+.label {
+  display: inline-block;
+  width: 35%;
+  text-align: right;
+  vertical-align: top;
+  padding-top: 20px;
+  
+}
+
+.right-tab {
+  display: inline-block;
+  width: 40%;
+  text-align: left;
+  padding: 5px;
+}
+
+.input {
+  height: 20px;
+  width: 240px;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.dropdown {
+  margin: 10px 10px;
+  border-radius: 4px;
+  height: 30px;
+  width: 250px;
+}
+
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+textarea {
+  margin-top: 10px;
+  border-radius: 4px;
+  width: 260px;
+}
+
+.submit-btn {
+  width: 140px;
+  height: 40px;
+  border-radius: 8px;
+  border: 3px solid #5588ee;
+}
+
+.submit-btn:hover {
+  background-color: #5588ee;
+  color: white;
+}
+
+@media screen and (max-width: 833px) {
+  .input {
+    width: 80%;
+  }
+  .right-tab {
+    width: 60%;
+  }
+  select {
+    width: 90%;
+  }
+  .dropdown {
+    width: 85%;
+  }
+  textarea {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+  }
+  .right-tab {
+    width: 90%;
+  }
+  .input {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .label {
+    text-align: left;
+    padding-left: 10px; 
+  }
+}

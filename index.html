@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div id="container" class="container">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">A short survey form</p>
+      <div class="form-outer">
+        <form action="" class="form" id="survey-form">
+          <div class="row">
+            <div class="label">
+              <label for="name" id="name-label">* Name</label>
+            </div>
+            <div class="right-tab">
+              <input
+                type="text"
+                class="input"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="label">
+              <label for="email" id="email-label">* E-mail</label>
+            </div>
+            <div class="right-tab">
+              <input
+                type="email"
+                class="input"
+                id="email"
+                placeholder="Enter your e-mail"
+                required
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="label">
+              <label for="number" id="number-label">* Age</label>
+            </div>
+            <div class="right-tab">
+              <input
+                type="number"
+                class="input"
+                id="number"
+                min="10"
+                max="89"
+                placeholder="Age"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="label">
+              <label for="radio-group">Sex</label>
+            </div>
+            <div class="right-tab">
+              <div class="radio" id="radio-group">
+                <ul>
+                  <li><input type="radio" value="male" name="group1" />Male</li>
+                  <li>
+                    <input type="radio" value="female" name="group1" />Female
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="label">
+              <label for="dropdown">Hobby</label>
+            </div>
+            <div class="right-tab">
+              <select class="dropdown" id="dropdown">
+                <option disabled selected value>Select an option</option>
+                <option value="1">Skiing</option>
+                <option value="2">Skating</option>
+                <option value="3">Boxing</option>
+                <option value="4">Tourism</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="label">
+              <label for="seasons">Favorite season</label>
+            </div>
+            <div class="right-tab">
+              <div class="checkbox">
+                <ul id="seasons">
+                  <li>
+                    <input type="checkbox" value="1" name="season" />Winter
+                  </li>
+                  <li>
+                    <input type="checkbox" value="2" name="season" />Spring
+                  </li>
+                  <li>
+                    <input type="checkbox" value="3" name="season" />Summer
+                  </li>
+                  <li>
+                    <input type="checkbox" value="4" name="season" />Autumn
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="label">
+              <label for="text">Comment (optional)</label>
+            </div>
+            <div class="right-tab">
+              <textarea name="" id="text" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+          <button class="submit-btn" type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
